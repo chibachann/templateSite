@@ -82,6 +82,11 @@
     color: white;
     font-family: var(--font-family-gothic);
     text-align: center;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (min-width:561px) {
@@ -141,7 +146,7 @@
     .heroButton {
         width: 15vw;
         height: 3vw;
-        border-radius: 5px;
+        border-radius: 0;
         font-size: 1.2vw;
     }
     

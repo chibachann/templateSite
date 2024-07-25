@@ -7,10 +7,11 @@ const Hero = () => {
         <section className={styles.Section}>
             <div className={styles.Grid}>
                 <div className={styles.heroImage1}>
-                    <img src="/images/Hero01.jpg" alt="hero"/>
+                    <img src="/images/about.jpg" alt="hero"/>
+                    
                 </div>
                 <div className={styles.heroImage2}>
-                    <img src="/images/about.jpg" alt="hero"/>
+                    <img src="/images/Hero01.jpg" alt="hero"/>
                 </div>
                 
                 <div className={styles.heroTextContainer}>
