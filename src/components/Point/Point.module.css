@@ -73,6 +73,7 @@
     display: none;
 }
 
+
 @media (min-width:561px) {
     .Grid {
         grid-template-columns: var(--grid-columns-tb);
@@ -137,7 +138,7 @@
         border-radius: 90%;
         box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
     }
-    .SubImage > img {
+    .SubImage > picture > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
