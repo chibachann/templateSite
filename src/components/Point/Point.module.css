@@ -1,0 +1,156 @@
+.Section {
+    width: 100%;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.PointCard {
+    grid-column: 1/-1;
+    grid-row: span 8;
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-auto-rows: var(--grid-rows-sp);
+}
+
+.PointNumber {
+    grid-column: 5 / -1;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 50%;
+    place-self: center;
+    text-align: center;
+
+    h1 {
+        color: rgb(149, 110, 11);
+        font-size: 4vw;
+        line-height: 1.5;
+    }
+
+    h2 {
+        color: rgb(149, 110, 11);
+        font-size: 10vw;
+        line-height: 1;
+        text-decoration: underline;
+        text-underline-offset: 2vw;
+    }
+
+}
+
+.PointImage {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    border-radius: 90%;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+    img {
+        border-radius: 90%;
+    }
+}
+
+.PointText {
+    grid-column: 2 / -1;
+    grid-row: 4 / 8;
+    width: 100%;
+    height: 90%;
+    place-self: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);
+    
+
+    h2 {
+        color: rgb(149, 110, 11);
+        padding-top: 5vw;
+        padding-left: 3vw;
+        font-size: 5.5vw;
+    }
+
+    p {
+        padding-left: 3vw;
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+}
+
+.SubImage {
+    display: none;
+}
+
+@media (min-width:561px) {
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+
+    
+
+    .PointCard {
+        grid-column: span 6;
+        grid-row: span 6;
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+
+    .PointCard:nth-child(1) {
+        grid-row: 1 / 7;
+    }
+    .PointCard:nth-child(2) {
+        grid-row: 4 / 10;
+    }
+    .PointCard:nth-child(3) {
+        
+        grid-row: 7 / 13;
+    }
+
+
+    .PointNumber {
+        grid-column: 5 / -1;
+        grid-row: 1 / 3;
+        h1 {
+            font-size: 1.5vw;
+        }
+
+        h2 {
+            font-size: 4vw;
+            text-underline-offset: 1vw;
+        }
+    }
+
+    .PointImage {
+        grid-row: 1 / 4;
+    }
+
+    .PointText {
+        grid-row: 3 / 6;
+        h2 {
+            font-size: 2.5vw;
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    .SubImage {
+        display: grid;
+        grid-column: 7 / -1;
+        grid-row: 10 / 13;
+        width: 40vw;
+        height: 35vw;
+        border-radius: 90%;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 90%;
+        }
+    }
+}

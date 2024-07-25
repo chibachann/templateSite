@@ -17,11 +17,12 @@ const Rooter = () => {
                     <Link to="/template02">template02</Link>
                 </div>
                 <div className={styles.Button}>
-                    <Link to="/template0102">template0102</Link>
+                    <Link to="/template03">template03</Link>
                 </div>
                 <div className={styles.Button}>
-                    <Link to="/template02">template02</Link>
+                    <Link to="/combination">Combination</Link>
                 </div>
+                
             </div>
         </section>
     );

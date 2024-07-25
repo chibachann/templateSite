@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { useStaticQuery, graphql} from 'gatsby';
 import Layout from '../components/layout';
+import Point from '../components/Point/Point';
 import ToHome from '../components/ToHome/ToHome';
-import Concept from '../components/Concept/Concept';
-import Hero from '../components/Hero01/Hero';
+
 
 const TemplatePage = () => {
     return (
       <Layout>
-        <Hero />
-        <Concept />
+        <Point />
         <ToHome />
       </Layout>
     );
