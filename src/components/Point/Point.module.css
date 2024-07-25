@@ -24,21 +24,18 @@
     height: 50%;
     place-self: center;
     text-align: center;
-
-    h1 {
-        color: rgb(149, 110, 11);
-        font-size: 4vw;
-        line-height: 1.5;
-    }
-
-    h2 {
-        color: rgb(149, 110, 11);
-        font-size: 10vw;
-        line-height: 1;
-        text-decoration: underline;
-        text-underline-offset: 2vw;
-    }
-
+}
+.PointNumber > h1 {
+    color: rgb(149, 110, 11);
+    font-size: 4vw;
+    line-height: 1.5;
+}
+.PointNumber > h2 {
+    color: rgb(149, 110, 11);
+    font-size: 10vw;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-offset: 2vw;
 }
 
 .PointImage {
@@ -46,10 +43,9 @@
     grid-row: 1 / 5;
     border-radius: 90%;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
-
-    img {
-        border-radius: 90%;
-    }
+}
+.PointImage > img {
+    border-radius: 90%;
 }
 
 .PointText {
@@ -60,20 +56,17 @@
     place-self: center;
     background-color: white;
     box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);
-    
-
-    h2 {
-        color: rgb(149, 110, 11);
-        padding-top: 5vw;
-        padding-left: 3vw;
-        font-size: 5.5vw;
-    }
-
-    p {
-        padding-left: 3vw;
-        padding-right: 5vw;
-        font-size: 4vw;
-    }
+}
+.PointText > h2 {
+    color: rgb(149, 110, 11);
+    padding-top: 5vw;
+    padding-left: 3vw;
+    font-size: 5.5vw;
+}
+.PointText > p {
+    padding-left: 3vw;
+    padding-right: 5vw;
+    font-size: 4vw;
 }
 
 .SubImage {
@@ -112,14 +105,13 @@
     .PointNumber {
         grid-column: 5 / -1;
         grid-row: 1 / 3;
-        h1 {
-            font-size: 1.5vw;
-        }
-
-        h2 {
-            font-size: 4vw;
-            text-underline-offset: 1vw;
-        }
+    }
+    .PointNumber >  h1 {
+        font-size: 1.5vw;
+    }
+    .PointNumber > h2 {
+        font-size: 4vw;
+        text-underline-offset: 1vw;
     }
 
     .PointImage {
@@ -128,13 +120,12 @@
 
     .PointText {
         grid-row: 3 / 6;
-        h2 {
-            font-size: 2.5vw;
-        }
-
-        p {
-            font-size: 1.5vw;
-        }
+    }
+    .PointText > h2 {
+        font-size: 2.5vw;
+    }
+    .PointText > p {
+        font-size: 1.5vw;
     }
 
     .SubImage {
@@ -145,12 +136,11 @@
         height: 35vw;
         border-radius: 90%;
         box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 90%;
-        }
+    }
+    .SubImage > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 90%;
     }
 }
