@@ -1,0 +1,195 @@
+.Section {
+    padding: 10vw 0;
+    width: 100%;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.TopImage {
+    grid-column: 1/-1;
+    grid-row: 1/5;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+
+.Title {
+    grid-column: 1/-1;
+    grid-row: 5/7;
+    width: 90%;
+    text-align: center;
+}
+
+.Title > h1 {
+    font-size: 7vw;
+    line-height: 2;
+}
+.Title > h2 {
+    font-family: var(--font-family-gothic);
+    font-size: 4.5vw;
+    line-height: 1;
+    color: #936639;
+}
+
+.mySwiper {
+    grid-column: 1/-1;
+    grid-row: 7/17;
+    width: 100%;
+    height: 100%;
+}
+.mySwiper :global(.swiper-pagination-bullet) {
+    background-color: rgba(191, 89, 0, 0.493);
+}
+
+.SwiperCard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-auto-rows: 22vw;
+}
+
+.SwiperImage {
+    grid-row: 1/6;
+    width: 80vw;
+    height: 100vw;
+}
+.SwiperImage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SwiperText {
+    width: 80vw;
+    height: 100%;
+    font-size: 3vw;
+}
+
+.SwiperText > h1 {
+    line-height: 2;
+    color: #936639;
+}
+
+.Button {
+    grid-column: 1/-1;
+    grid-row: 17/19;
+    width: 70vw;
+    height: 10vw;
+    display: grid;
+    place-items: center;
+    background-color: #582f0e;
+    color: white;
+    font-size: 4vw;
+}
+
+@media (min-width:561px) {
+    .Section {
+        padding: 5vw 0;
+    }
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+
+    .TopImage {
+        grid-column: 1/-1;
+        grid-row: 1/3;
+        width: 100%;
+        height: 80%;
+    }
+
+    .Title {
+        grid-row: 3/5;
+        
+    }
+
+    .Title > h1 {
+        font-size: 3vw;
+    }
+    .Title > h2 {
+        font-size: 2.5vw;
+    }
+
+    .mySwiper {
+        grid-column: 1/-1;
+        grid-row: 5/11;
+        width: 90%;
+        height: 90%;
+    }
+
+    .SwiperCard {
+        grid-auto-rows: 10vw;
+    }
+
+    .SwiperImage {
+        grid-row: 1 / 4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .SwiperText {
+        grid-row: 4 / 6;
+        height: 80%;
+        width: 100%;
+        font-size: 1.3vw;
+    }
+    .Button {
+        grid-row: 11 / 12;
+        width: 18vw;
+        height: 4vw;
+    }
+    .Button > a {
+        font-size: 1.2vw;
+    }
+}
+
+@media (min-width:1081px) {
+    .Section{
+        padding: 5vw 0;
+    }
+    .Grid {
+        grid-template-columns: var(--grid-columns-pc);
+        grid-auto-rows: var(--grid-rows-pc);
+    }
+    
+    .TopImage {
+        grid-column: 1/-1;
+        grid-row: 1/5;
+        width: 100%;
+        height: 80%;
+    }
+
+    .Title {
+        grid-row: 5/7;
+    }
+    
+    .Title > h1 {
+        font-size: 1.8vw;
+    }
+    .Title > h2 {
+        font-size: 1.3vw;
+    }
+    .mySwiper {
+        grid-row: 7 / 18;
+    }
+    .SwiperText {
+        font-size: 1vw;
+    }
+
+    .Button {
+        grid-row: 18/20;
+        width: 18vw;
+        height: 3vw;
+    }
+    .Button > a {
+        font-size: 1.3vw;
+    }
+}

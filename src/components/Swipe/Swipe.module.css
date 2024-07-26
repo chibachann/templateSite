@@ -1,7 +1,7 @@
 .Section {
     padding: 10vw 0;
     width: 100%;
-    background-color: rgb(209, 207, 203);
+    background-color: #edede9;
 }
 
 .Grid {
@@ -26,7 +26,7 @@
     font-family: var(--font-family-gothic);
     font-size: 4.5vw;
     line-height: 1;
-    color: rgb(163, 92, 1);
+    color: #936639;
 }
 
 .SwiperContainer {
@@ -78,8 +78,8 @@
 }
 
 .SwiperCard {
-    height: 80vw;
-    width: 60vw;
+    height: 90vw;
+    width: 75vw;
     background-color: white;
     color: black;
     display: grid;
@@ -112,7 +112,7 @@
 }
 
 .SwiperTag > p {
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 0;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .SwiperText > h2 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 700;
     line-height: 1.5;
     color: black;
@@ -144,7 +144,7 @@
     grid-row: 11/12;
     width: 60vw;
     height: 12vw;
-    background-color: rgb(118, 68, 3);
+    background-color: #582f0e;
     color: white;
     display: grid;
     place-items: center;
@@ -209,7 +209,7 @@
     }
 }
 
-@media (min-width:1080px) {
+@media (min-width:1081px) {
     .Section{
         padding: 5vw 0;
     }
