@@ -20,6 +20,9 @@ const Rooter = () => {
                     <Link to="/template03">template03</Link>
                 </div>
                 <div className={styles.Button}>
+                    <Link to="/template04">template04</Link>
+                </div>
+                <div className={styles.Button}>
                     <Link to="/combination">Combination</Link>
                 </div>
                 

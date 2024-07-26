@@ -132,7 +132,7 @@
     .SubImage {
         display: grid;
         grid-column: 7 / -1;
-        grid-row: 10 / 13;
+        grid-row: 10 / 14;
         width: 40vw;
         height: 35vw;
         border-radius: 90%;
