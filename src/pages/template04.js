@@ -2,14 +2,12 @@ import * as React from 'react';
 import { useStaticQuery, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import Swipe from '../components/Swipe/Swipe';
-import ToHome from '../components/ToHome/ToHome';
 
 
 const TemplatePage = () => {
     return (
       <Layout>
         <Swipe/>
-        <ToHome />
       </Layout>
     );
   };

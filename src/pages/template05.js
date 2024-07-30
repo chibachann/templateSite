@@ -2,14 +2,12 @@ import * as React from 'react';
 import { useStaticQuery, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import Works from '../components/Works/Works';
-import ToHome from '../components/ToHome/ToHome';
 
 
 const TemplatePage = () => {
     return (
       <Layout>
         <Works />
-        <ToHome />
       </Layout>
     );
   };

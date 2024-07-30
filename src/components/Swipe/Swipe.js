@@ -2,9 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import * as styles from "./Swipe.module.css";
-import "swiper/css"
-import 'swiper/css/navigation'; 
-import 'swiper/css/pagination';
+
 
 const Swipe = () => {
     return (
@@ -86,7 +84,7 @@ const Swipe = () => {
                     </Swiper>
                 </div>
                <div className={styles.Button}>
-                      <a href="">ブログの一覧はこちら</a>
+                      <a href="/">ブログの一覧はこちら</a>
                 </div>
             </div>
         </section>

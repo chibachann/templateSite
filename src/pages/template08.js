@@ -1,15 +1,13 @@
 import * as React from 'react';
-import Concept from '../components/Concept01/Concept';
+import Layout from '../components/layout';
+import Concept from '../components/Concept02/Concept';
 
 const TemplatePage = () => {
     return (
-      <>
+      <Layout>
         <Concept />
-      </>
-      
+      </Layout>
     );
   };
 
 export default TemplatePage;
-
-  

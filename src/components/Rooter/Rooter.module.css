@@ -4,7 +4,7 @@
 
 .GridContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: var(--grid-rows-sp);
     place-items: center;
     column-gap: 10px;
@@ -34,3 +34,35 @@
 }
 
 
+@media (min-width: 561px) {
+    .GridContainer {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: var(--grid-rows-tb);
+        column-gap: 10px;
+    }
+
+    .Title {
+        grid-column: 1 / -1;
+    }
+
+    .Button {
+        height: 5vw;
+        width: 15vw;
+        font-size: 2vw;
+    }
+    
+}
+
+@media (min-width:1081px) {
+    .GridContainer {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: var(--grid-rows-pc);
+        column-gap: 10px;
+    }
+
+    .Button {
+        height: 3vw;
+        width: 100%;
+        font-size: 1.2vw;
+    }
+}
